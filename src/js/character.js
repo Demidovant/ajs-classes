@@ -1,9 +1,9 @@
-const types = [
-    'Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie',
-];
-
 export default class Character {
     constructor(name, type, attack, defence) {
+        const types = [
+            'Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie',
+        ];
+
         if (name.length < 2 || name.length > 10) {
             throw new Error('Invalid name length');
         }
